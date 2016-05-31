@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="author" content="Andrea Holetic, Matija Bilic, Ivan Vršek">
+	<meta name="description" content="Prijava za ljetni sahovski turnir">
+	<meta name="keywords" content="šah, turnir, ljetni, 2016">
+    <title>Registracija</title>
+    <style>
+			*{
+				padding:0;
+				margin:0;
+			}
+			body{
+				font-family:Calibri;
+				margin:0 auto;
+				background-color:#103D63;
+			}
+			h1{
+				text-transform:uppercase;
+				border-bottom:1px dashed #103D63;
+				padding-bottom:5px;
+			}
+			section{
+				font-size:1.1em;
+				margin:0 25%;
+				background-color:#A0C0DB;
+				color:black;
+				padding:0px;
+				opacity:0.9;
+				text-align:center;
+			}
+			p{
+				padding:10px;
+			}
+			section img{
+				width:100%;
+				padding-bottom:5px;
+			}
+			#inp{
+				width:30%;
+			}
+			#inp2{
+				width:30%;
+				height:200px;
+			}
+			#inpb{
+				width:10%;
+				height:30px;
+			}
+		</style>
+		
+  </head>
+  <body>
+	
+  	<section>
+		<img src="chess.jpg"/>
+  		<h1>Ljetni šahovski turnir</h1>
+    	<p>Od 11. do 17. srpnja ove godine u prostorijama Tvornice kulture u Zagrebu održava se Ljetni šahovski turnir. Registrirajte se preko donje forme i pridružite nam se.</p>
+		</br>
+   		<form action="index.php" method="post">
+    		<label for="ime">Ime i prezime*: </label> </br>
+    		<input id="inp" name="ime" type="text" required/> </br></br>
+    		
+    		<label for="spol">Spol: </label></br>
+			<input type="radio" name="spol" value="muski"/>&nbsp;M&nbsp; &nbsp;   
+			<input type="radio" name="spol" value="zenski"/>&nbsp;Ž &nbsp;</br></br>
+			
+    		<label for="godina">Godina rođenja: </label></br>
+    		<input id="inp" name="godina" type="text" /></br></br>
+    		
+    		<label for="mobitel">Broj mobitela*: </label></br>
+    		<input id="inp" name="mobitel"  type="text" required/></br></br>
+    		
+    		<label for="drzava">Država: </label></br>
+			<input id="inp" type="text" name="drzava" /></br></br>
+				
+			<label for="email">E-mail*: </label></br>
+			<input id="inp" type="email" name="email" required/></br></br>
+				
+			<label for="fide">FIDE*: </label></br>
+			<input id="inp" type="text" name="fide" required/></br></br>
+    		
+			<label for="titula">Titula: </label></br>
+			<input id="inp" type="text" name="titula" /></br></br>
+			
+    		<label>Napomena: </label> <br/>
+			<textarea name="napomena" id="inp2" > </textarea> </br></br></br>
+    		
+    		<input id="inpb" type="submit" name="ok" value="Pošalji"/> &nbsp; 
+			<input id="inpb" type="reset" value="Poništi"/>	</br></br>
+  		</form>
+	</section>
+  
+  </body>
+</html>
